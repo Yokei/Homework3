@@ -21,13 +21,13 @@ public class ExampleTest {
 
     @Test
     public void testMakeClass() {
-        this.admin.createClass("Test", 2017, "Instructor", 15);
+        this.admin.createClass("Test", 2017, "Instructor", 20);
         assertTrue(this.admin.classExists("Test", 2017));
     }
 
     @Test
     public void testMakeClass2() {
-        this.admin.createClass("Test", 2016, "Instructor", 15);
+        this.admin.createClass("Test", 2016, "Instructor", 20);
         assertFalse(this.admin.classExists("Test", 2016));
     }
 }
